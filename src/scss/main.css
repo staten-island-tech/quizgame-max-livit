@@ -1,4 +1,14 @@
-body {
-  background-color: blanchedalmond;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap");
+:root {
+  background-color: cadetblue;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Nunito", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
