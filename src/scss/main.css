@@ -2,6 +2,7 @@
 :root {
   background-color: cadetblue;
 }
+<<<<<<< Updated upstream
 
 * {
   -webkit-box-sizing: border-box;
@@ -11,4 +12,6 @@
   font-size: 100%;
   font-family: "Nunito", sans-serif;
 }
+=======
+>>>>>>> Stashed changes
 /*# sourceMappingURL=main.css.map */
