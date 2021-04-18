@@ -1,13 +1,9 @@
 {
   "name": "parcel-template",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "main": "game.js",
-=======
   "main": "index.js",
->>>>>>> parent of 8ce09ba (json)
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel src/html/index.html",
     "build-prod": "parcel build src/index.html"
   },
   "repository": {
