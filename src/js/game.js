@@ -70,10 +70,14 @@ getNewQuestion = () => {
     localStorage.setItem("mostRecentScore", score);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return window.location.assign("/src/html/end.html");
 =======
     return window.location.assign("/end.html");
 >>>>>>> parent of e4ab9f6 (almost)
+=======
+    return window.location.assign("html/end.html");
+>>>>>>> parent of c7c03b9 (dasdgbdf)
   }
 
   questionCounter++;
