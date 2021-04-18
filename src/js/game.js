@@ -69,7 +69,11 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
+<<<<<<< HEAD
     return window.location.assign("/src/html/end.html");
+=======
+    return window.location.assign("/end.html");
+>>>>>>> parent of e4ab9f6 (almost)
   }
 
   questionCounter++;
@@ -91,27 +95,31 @@ getNewQuestion = () => {
 };
 
 choices.forEach((choice) => {
-  choice.addEventListener("click", (e) => {
-    if (!acceptingAnswers) return;
+  choice.addEventListener(
+    "click",
+    (e) => {
+      if (!acceptingAnswers) return;
 
-    acceptingAnswers = false;
-    const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
+      acceptingAnswers = false;
+      const selectedChoice = e.target;
+      const selectedAnswer = selectedChoice.dataset["number"];
 
-    let classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+      let classToApply =
+        selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
-    if (classToApply === "correct") {
-      incrementScore(SCORE_POINTS);
-    }
+      if (classToApply === "correct") {
+        incrementScore(SCORE_POINTS);
+      }
 
-    selectedChoice.parentElement.classList.add(classToApply);
+      selectedChoice.parentElement.classList.add(classToApply);
 
-    setTimeout(() => {
-      selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    }, 500);
-  });
+      setTimeout(() => {
+        selectedChoice.parentElement.classList.remove(classToApply);
+        getNewQuestion();
+      });
+    },
+    1000
+  );
 });
 
 incrementScore = (num) => {

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap");
+:root {
+  background-color: lightslategray;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: whitesmoke;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: whitesmoke;
+  background: -webkit-gradient(linear, left top, right top, from(#8037d3), to(#1e61c5));
+  background: linear-gradient(90deg, #8037d3 0%, #1e61c5 100%);
+  border-radius: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 115, 244, 0.6);
+          box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 115, 244, 0.6);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#highscores-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#ff37d3), to(#f0ddc5));
+  background: linear-gradient(90deg, #ff37d3 0%, #f0ddc5 100%);
+}
+
+#highscores-btn:hover {
+  -webkit-box-shadow: 0 0.4rem 1.4 rem 0 rgba(241, 241, 73, 0.5);
+          box-shadow: 0 0.4rem 1.4 rem 0 rgba(241, 241, 73, 0.5);
+}
+
+.fa-crown {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=styledaquiz.css.map */
