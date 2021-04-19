@@ -1,0 +1,16 @@
+body {
+  color: #fff;
+}
+
+.choice-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background: #125dff;
+  font-size: 3rem;
+  min-width: 80rem;
+}
+/*# sourceMappingURL=game.css.map */
